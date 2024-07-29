@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz page result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="result-div">
+            <h2>Quiz Result</h2>
+           <div>
+            <div class="result"><span id="username"></span><p>your result is</p></div>
+            <div class="result"><p>Total Time Taken:</p><span id="totaltime"></span></div>
+            <div class="result"><p>Total Question:</p><span id="totalquestion"></span></div>
+            <div class="result"><p>Attempt:</p><span id="attempt"></span></div>
+            <div class="result"> <p>Correct:</p><span id="correctans"></span></div>
+           <div class="result"> <p>Wrong:</p><span id="wrong"></span></div>
+           <div class="result"> <p>Percentage:</p><span id="percentage"></span></div>
+          </div>
+          <button onclick="window.location='./quize_page.html'">Start Again</button>
+          <button onclick="window.location='./index.html'">Go to Home</button>
+          </div>
+       </div>
+    </div>
+    
+    <script >
+    function showresult(){
+     let datastring=localStorage.getItem('result');
+     let result=JSON.parse(datastring);
+    document.getElementById('username').innerHTML=`${result.uname}`;
+    document.getElementById('totaltime').innerHTML=`${result.totaltime}sec`;
+    document.getElementById('totalquestion').innerHTML=`${result.totalques}`;
+    document.getElementById('attempt').innerHTML=`${result.attempt}`;
+    document.getElementById('correctans').innerHTML=`${result.score}`;
+    document.getElementById('wrong').innerHTML=`${result.wrong}`;
+    document.getElementById('percentage').innerHTML=`${result.percent}%`;
+    };
+   showresult();
+   localStorage.removeItem('result');
+    </script>
+</body>
+</html>

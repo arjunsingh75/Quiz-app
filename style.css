@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:Arial, Helvetica, sans-serif
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div{
+    width: 60%;
+    text-align: center;
+    border: 3px solid rgb(219, 225, 231);
+    box-shadow:0 0 2px  ;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+#user-details-section input{
+    width: 70%;
+    height: 20px;
+    border-radius: 5px;
+    border:3px solid rgb(233, 239, 245);
+    padding: 12px;
+    margin: 20px 0 20px 0;
+}
+#user-details-section>button{
+    background-color:rgb(65, 146, 227);
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: none;
+    font-size: 10PX;
+    color: rgb(215, 224, 231);
+    margin-left: 10px;
+    font-weight:800;
+}
+.main-div h2{
+  color: rgb(70, 159, 248);
+  font-weight: 700;
+  margin-top: 10px;
+}
+#category-section{
+  border-top:1px solid rgb(209, 225, 239);
+}
+#category-section button{
+   background-color: rgba(19, 154, 244, 0.1);
+    padding: 10px;
+    width: 45%;
+   border: 2px solid rgb(114, 177, 240);
+   border-radius: 10px;
+   color:gray;
+   font-size: 16px;
+}
+
+.category-option{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+} 
+/* =================================index page css finished============= */
+#score{
+    font-size: 30px;
+    color: rgb(109, 106, 106);
+}
+.quiz-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    font-weight: 700;
+    font-size:21px;
+}
+.circle,.option{
+    border: 2px solid rgb(113, 188, 235);
+    color: rgb(90, 173, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.totalquestion{
+    position: relative;
+    z-index:1; 
+    margin: 20px 0 0 45%;
+    background-color: aliceblue;
+}
+.question{
+    margin-top:-25px;
+    height: 150px;
+    width: 100%;
+    border: 2px solid rgb(203, 169, 119);
+    border-radius: 10px;
+    position:relative;
+    padding:30px 10px;
+    overflow:hidden;
+}
+.quiz-div .option{
+    height:40px;
+    width:47%;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 17px;
+}
+ .main-div>button,.result-div>button{
+    background-color: dodgerblue;
+    height: 40px;
+    width: 35%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: rgb(235, 243, 255);
+}
+.heading,.question{
+    font-size: 18px;
+    color: rgb(72, 68, 68);
+    font-weight: 500;
+}
+/* ================================quiz page css finished=============== */
+.result p{
+    color: rgb(125, 122, 122);
+}
+.result{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin-top: 16px;
+}
+.choice{
+    background-color: dodgerblue;
+    color: aliceblue;
+}
+/* =====================result page css finished===================== */
